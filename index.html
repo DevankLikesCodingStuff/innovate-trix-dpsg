@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>golden hour — a tresemmé × harry styles capsule</title>
+  <meta name="description" content="hair, but make it golden hour. a six-track capsule from tresemmé and harry styles. wash as you are." />
+  <meta property="og:title" content="golden hour — tresemmé × harry styles" />
+  <meta property="og:description" content="for the hair you wear like a feeling." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F4ECDD'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%237A1F2B' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%237A1F2B'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- soft cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- top nav -->
+  <header class="nav">
+    <a class="logo" href="#hero" aria-label="golden hour home">
+      <svg viewBox="0 0 200 40" class="logo-svg" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="20" cy="20" r="11" />
+          <circle cx="20" cy="20" r="2.4" fill="currentColor" />
+          <line x1="20" y1="3" x2="20" y2="7" />
+          <line x1="20" y1="33" x2="20" y2="37" />
+          <line x1="3" y1="20" x2="7" y2="20" />
+          <line x1="33" y1="20" x2="37" y2="20" />
+          <line x1="8" y1="8" x2="11" y2="11" />
+          <line x1="29" y1="29" x2="32" y2="32" />
+          <line x1="32" y1="8" x2="29" y2="11" />
+          <line x1="11" y1="29" x2="8" y2="32" />
+        </g>
+        <text x="46" y="18" font-family="Instrument Serif, serif" font-style="italic" font-size="15" fill="currentColor" letter-spacing="0.5">golden</text>
+        <text x="46" y="33" font-family="Instrument Serif, serif" font-style="italic" font-size="15" fill="currentColor" letter-spacing="0.5">hour</text>
+      </svg>
+    </a>
+    <nav class="nav-links">
+      <a href="#album">the album</a>
+      <a href="#ritual">the ritual</a>
+      <a href="#cathedrals">refill cathedrals</a>
+      <a href="#sideb">side b</a>
+    </nav>
+    <div class="nav-meta">a tresemmé × harry styles capsule</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-eyebrow reveal">
+      <span class="dot"></span>
+      <span>golden hour — a tresemmé × harry styles capsule</span>
+      <span class="dot"></span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="reveal d1">for the hair</span>
+      <span class="reveal d2"><em>you wear</em></span>
+      <span class="reveal d3">like a <em>feeling.</em></span>
+    </h1>
+
+    <div class="hero-sub reveal d4">
+      a six-track capsule. pearl-finish vinyl. refillable. <br/>
+      wash as you are.
+    </div>
+
+    <button class="cta reveal d5" id="enterAlbum">
+      <span>enter the album</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
+    </button>
+
+    <div class="hero-corner tl">side a · side b</div>
+    <div class="hero-corner tr">est. mmxxvi</div>
+
+    <!-- floating ornaments -->
+    <svg class="ornament feather" viewBox="0 0 60 200" aria-hidden="true">
+      <path d="M30 5 C 10 50, 10 110, 30 195 C 50 110, 50 50, 30 5 Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+      <path d="M30 20 L30 190" stroke="currentColor" stroke-width="0.6" opacity="0.5"/>
+      <g stroke="currentColor" stroke-width="0.5" opacity="0.45">
+        <path d="M30 40 L18 55 M30 55 L16 72 M30 70 L15 90 M30 88 L17 108 M30 105 L20 124 M30 122 L22 140 M30 138 L25 154"/>
+        <path d="M30 40 L42 55 M30 55 L44 72 M30 70 L45 90 M30 88 L43 108 M30 105 L40 124 M30 122 L38 140 M30 138 L35 154"/>
+      </g>
+    </svg>
+    <div class="ornament pearl"></div>
+    <div class="ornament pearl pearl2"></div>
+  </section>
+
+  <!-- THE ALBUM -->
+  <section class="album" id="album">
+    <div class="section-head">
+      <div class="kicker"><span>i.</span> the album</div>
+      <h2>side a · side b. <em>six tracks, one ritual.</em></h2>
+      <p class="lede">six pearl-finish vinyl bottles, dropped like a record. each one a chapter in the wash. tap a disc to flip — read the scent, hear the track.</p>
+    </div>
+
+    <div class="side-label">
+      <span class="line"></span><span>side a</span><span class="line"></span>
+    </div>
+
+    <div class="vinyl-grid">
+
+      <div class="vinyl-card" data-track="01" data-sound="adoreyoutrack">
+        <div class="vinyl-flip">
+          <!-- front: vinyl -->
+          <div class="vinyl-face">
+            <div class="vinyl-disc tone-rose">
+              <div class="disc-label">
+                <span class="lbl-num">01</span>
+                <span class="lbl-name">adore you</span>
+                <span class="lbl-scent">fig + neroli</span>
+                <span class="lbl-hole"></span>
+              </div>
+            </div>
+            <div class="vinyl-meta">
+              <span>01 · adore you</span>
+              <span>shampoo</span>
+            </div>
+          </div>
+          <!-- back: details -->
+          <div class="vinyl-back">
+            <div class="back-num">01</div>
+            <h3 class="back-title">adore you</h3>
+            <div class="back-type">hydrating shampoo · 250ml</div>
+            <div class="back-scent">scent — fig leaf, neroli blossom, soft musk</div>
+            <div class="back-lyric">"i'd walk through fire for you / just let me adore you."</div>
+            <div class="back-foot">
+              <span class="back-price">₹1,490</span>
+              <button class="add-btn" data-name="adore you">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vinyl-card" data-track="02" data-sound="cherrytrack">
+        <div class="vinyl-flip">
+          <div class="vinyl-face">
+            <div class="vinyl-disc tone-cherry">
+              <div class="disc-label">
+                <span class="lbl-num">02</span>
+                <span class="lbl-name">cherry</span>
+                <span class="lbl-scent">cherry blossom + vanilla</span>
+                <span class="lbl-hole"></span>
+              </div>
+            </div>
+            <div class="vinyl-meta">
+              <span>02 · cherry</span>
+              <span>conditioner</span>
+            </div>
+          </div>
+          <div class="vinyl-back">
+            <div class="back-num">02</div>
+            <h3 class="back-title">cherry</h3>
+            <div class="back-type">color-protect conditioner · 250ml</div>
+            <div class="back-scent">scent — cherry blossom, bourbon vanilla, almond milk</div>
+            <div class="back-lyric">"don't you call him what you used to call me."</div>
+            <div class="back-foot">
+              <span class="back-price">₹1,490</span>
+              <button class="add-btn" data-name="cherry">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vinyl-card" data-track="03" data-sound="sunflowertrack">
+        <div class="vinyl-flip">
+          <div class="vinyl-face">
+            <div class="vinyl-disc tone-butter">
+              <div class="disc-label">
+                <span class="lbl-num">03</span>
+                <span class="lbl-name">sunflower</span>
+                <span class="lbl-scent">amber + sandalwood</span>
+                <span class="lbl-hole"></span>
+              </div>
+            </div>
+            <div class="vinyl-meta">
+              <span>03 · sunflower</span>
+              <span>heat mist</span>
+            </div>
+          </div>
+          <div class="vinyl-back">
+            <div class="back-num">03</div>
+            <h3 class="back-title">sunflower</h3>
+            <div class="back-type">heat-protect mist · 200ml</div>
+            <div class="back-scent">scent — warm amber, sandalwood, honeyed straw</div>
+            <div class="back-lyric">"sunflower, my eyes want you more than a melody."</div>
+            <div class="back-foot">
+              <span class="back-price">₹1,690</span>
+              <button class="add-btn" data-name="sunflower">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-label">
+      <span class="line"></span><span>side b</span><span class="line"></span>
+    </div>
+
+    <div class="vinyl-grid">
+      <div class="vinyl-card" data-track="04" data-sound="watermelonsugartrack">
+        <div class="vinyl-flip">
+          <div class="vinyl-face">
+            <div class="vinyl-disc tone-sage">
+              <div class="disc-label">
+                <span class="lbl-num">04</span>
+                <span class="lbl-name">watermelon sugar</span>
+                <span class="lbl-scent">pink pepper + coconut</span>
+                <span class="lbl-hole"></span>
+              </div>
+            </div>
+            <div class="vinyl-meta">
+              <span>04 · watermelon sugar</span>
+              <span>curl cream</span>
+            </div>
+          </div>
+          <div class="vinyl-back">
+            <div class="back-num">04</div>
+            <h3 class="back-title">watermelon sugar</h3>
+            <div class="back-type">curl &amp; wave cream · 200ml</div>
+            <div class="back-scent">scent — pink pepper, young coconut, sea salt</div>
+            <div class="back-lyric">"tastes like strawberries on a summer evenin'."</div>
+            <div class="back-foot">
+              <span class="back-price">₹1,890</span>
+              <button class="add-btn" data-name="watermelon sugar">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vinyl-card" data-track="05" data-sound="goldentrack">
+        <div class="vinyl-flip">
+          <div class="vinyl-face">
+            <div class="vinyl-disc tone-gold">
+              <div class="disc-label">
+                <span class="lbl-num">05</span>
+                <span class="lbl-name">golden</span>
+                <span class="lbl-scent">saffron + iris</span>
+                <span class="lbl-hole"></span>
+              </div>
+            </div>
+            <div class="vinyl-meta">
+              <span>05 · golden</span>
+              <span>shine oil</span>
+            </div>
+          </div>
+          <div class="vinyl-back">
+            <div class="back-num">05</div>
+            <h3 class="back-title">golden</h3>
+            <div class="back-type">shine oil · 50ml</div>
+            <div class="back-scent">scent — kashmiri saffron, iris, white tea</div>
+            <div class="back-lyric">"i don't wanna be alone / i know you're not alone."</div>
+            <div class="back-foot">
+              <span class="back-price">₹2,290</span>
+              <button class="add-btn" data-name="golden">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vinyl-card" data-track="06" data-sound="signofthetimestrack">
+        <div class="vinyl-flip">
+          <div class="vinyl-face">
+            <div class="vinyl-disc tone-lilac">
+              <div class="disc-label">
+                <span class="lbl-num">06</span>
+                <span class="lbl-name">sign of the times</span>
+                <span class="lbl-scent">rose + smoke</span>
+                <span class="lbl-hole"></span>
+              </div>
+            </div>
+            <div class="vinyl-meta">
+              <span>06 · sign of the times</span>
+              <span>overnight mask</span>
+            </div>
+          </div>
+          <div class="vinyl-back">
+            <div class="back-num">06</div>
+            <h3 class="back-title">sign of the times</h3>
+            <div class="back-type">overnight repair mask · limited · 150ml</div>
+            <div class="back-scent">scent — damask rose, dried smoke, leather</div>
+            <div class="back-lyric">"just stop your crying, it's a sign of the times."</div>
+            <div class="back-foot">
+              <span class="back-price">₹2,490</span>
+              <button class="add-btn" data-name="sign of the times">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="album-bundle reveal">
+      <div class="bundle-rule"></div>
+      <div class="bundle-row">
+        <div>
+          <div class="bundle-kicker">the full album</div>
+          <div class="bundle-title">all six tracks. one gatefold sleeve. <em>handwritten lyrics inside.</em></div>
+        </div>
+        <div class="bundle-right">
+          <div class="bundle-price"><s>₹11,350</s> <strong>₹9,990</strong></div>
+          <button class="add-btn ghost" data-name="the full album">add the album</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE RITUAL -->
+  <section class="ritual" id="ritual">
+    <div class="ritual-inner">
+      <div class="kicker"><span>ii.</span> the ritual</div>
+      <h2 class="ritual-h"><em>wash</em> as you <em>are.</em></h2>
+
+      <div class="ritual-grid">
+        <div class="ritual-col">
+          <p class="ritual-lyric">"treat <em>people</em> with kind hair."</p>
+          <p>this isn't a routine. it's a small, soft ceremony. seven minutes between you and the rest of the day where the water is warm, the light is gold, and you don't have to be anyone in particular.</p>
+          <p>we made six bottles for six different mornings. fig &amp; neroli for the day that needs softening. saffron oil for the night you want to glow without saying anything. rose &amp; smoke for the stories you keep wrapped in silk on the nightstand.</p>
+        </div>
+        <div class="ritual-col">
+          <p>tresemmé has been in your mother's shower for seventy-five years. we know hair. harry knows feeling. golden hour is what happens when the formula learns to listen.</p>
+          <p class="ritual-lyric small">"the hair you wear / like a feeling / is the hair you came in with."</p>
+          <p>no gendered aisles. no shouting label copy. no 47-step ladder of chemistry-lab claims. just six pearl bottles, a refillable promise, and a playlist on the back of every one.</p>
+          <div class="ritual-sign">— h <span class="sign-mark">✶</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFILL CATHEDRALS -->
+  <section class="cathedrals" id="cathedrals">
+    <div class="section-head">
+      <div class="kicker"><span>iii.</span> refill cathedrals</div>
+      <h2>the tour. <em>bring your bottle home, then bring it back.</em></h2>
+      <p class="lede">eight cities. eight stained-glass refill chapels. forty percent off when you refill, and a vinyl-stamp pressed into the back of every bottle. one of these stops, harry walks in unannounced.</p>
+    </div>
+
+    <ul class="tour">
+      <li class="tour-row">
+        <span class="tour-no">01</span>
+        <span class="tour-date">07 may 2026</span>
+        <span class="tour-city">london</span>
+        <span class="tour-venue">selfridges, oxford street</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+      <li class="tour-row">
+        <span class="tour-no">02</span>
+        <span class="tour-date">14 may 2026</span>
+        <span class="tour-city">paris</span>
+        <span class="tour-venue">galeries lafayette, haussmann</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+      <li class="tour-row">
+        <span class="tour-no">03</span>
+        <span class="tour-date">29 may 2026</span>
+        <span class="tour-city">new york</span>
+        <span class="tour-venue">dover street market, soho</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+      <li class="tour-row">
+        <span class="tour-no">04</span>
+        <span class="tour-date">12 jun 2026</span>
+        <span class="tour-city">los angeles</span>
+        <span class="tour-venue">westfield century city</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+      <li class="tour-row">
+        <span class="tour-no">05</span>
+        <span class="tour-date">26 jun 2026</span>
+        <span class="tour-city">tokyo</span>
+        <span class="tour-venue">isetan shinjuku, b1f</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+      <li class="tour-row">
+        <span class="tour-no">06</span>
+        <span class="tour-date">17 jul 2026</span>
+        <span class="tour-city">mumbai</span>
+        <span class="tour-venue">phoenix mills, lower parel</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+      <li class="tour-row">
+        <span class="tour-no">07</span>
+        <span class="tour-date">02 aug 2026</span>
+        <span class="tour-city">berlin</span>
+        <span class="tour-venue">kadewe, tauentzienstraße</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+      <li class="tour-row">
+        <span class="tour-no">08</span>
+        <span class="tour-date">23 aug 2026</span>
+        <span class="tour-city">são paulo</span>
+        <span class="tour-venue">iguatemi, jardim paulistano</span>
+        <span class="tour-cta">rsvp →</span>
+      </li>
+    </ul>
+    <div class="tour-foot">may 2026 → aug 2026 · refills 40% off retail · bring the bottle, take the stamp.</div>
+  </section>
+
+  <!-- SIDE B HIDDEN TRACK -->
+  <section class="sideb" id="sideb">
+    <div class="sideb-inner">
+      <div class="kicker lilac"><span>iv.</span> side b · the hidden track</div>
+      <div class="vault">
+        <svg class="lock" viewBox="0 0 60 80" aria-hidden="true">
+          <rect x="10" y="34" width="40" height="38" rx="4" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M18 34 V22 a12 12 0 0 1 24 0 V34" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="30" cy="52" r="3" fill="currentColor"/>
+          <line x1="30" y1="55" x2="30" y2="62" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <h2 class="sideb-h">refill three times. <em>unlock</em> "falling."</h2>
+        <p class="sideb-copy">a leave-in serum. ninety-four millilitres of damask rose, oud, and the night before the morning after. it isn't on the menu. it isn't in the press kit. it arrives in a lilac envelope when the bottle on your shelf has been emptied, refilled, and emptied again. three times.</p>
+        <div class="sideb-meta">
+          <div><span>track</span><strong>07 · falling</strong></div>
+          <div><span>available</span><strong>only via refill</strong></div>
+          <div><span>scent</span><strong>damask rose, oud, smoke</strong></div>
+          <div><span>price</span><strong>₹2,690 · members only</strong></div>
+        </div>
+        <div class="sideb-track-row">
+          <span class="play-tri"></span>
+          <span class="track-bar"><span class="track-fill"></span></span>
+          <span class="track-time">02:47 / 04:13</span>
+        </div>
+        <p class="sideb-whisper">"i'm <em>falling</em> again, i'm <em>falling</em> again, i'm <em>falling.</em>"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO / FOOTER -->
+  <footer class="manifesto" id="manifesto">
+    <div class="manifesto-inner">
+      <div class="kicker"><span>v.</span> the manifesto</div>
+      <h2 class="manifesto-h">
+        <em>hair,</em> but make it <em>golden hour.</em>
+      </h2>
+      <div class="manifesto-grid">
+        <div>
+          <p>tresemmé makes the formula. harry brings the feeling. you bring the hair, the morning, the song stuck in your head. nothing here is gendered. nothing here is final. every bottle wants to be refilled.</p>
+          <p>treat people with kind hair. wash as you are. and when in doubt — golden, every time.</p>
+          <div class="sign-h">— h<span class="sign-mark">✶</span></div>
+        </div>
+        <div class="manifesto-claims">
+          <div class="claim"><strong>100%</strong><span>recycled aluminum bottles, third-party audited</span></div>
+          <div class="claim"><strong>−73%</strong><span>packaging waste per loyal refill customer</span></div>
+          <div class="claim"><strong>vegan</strong><span>cruelty-free across all six skus</span></div>
+          <div class="claim"><strong>1%</strong><span>of revenue to musicares — harry's chosen partner</span></div>
+        </div>
+      </div>
+
+      <form class="signup" onsubmit="event.preventDefault(); showToast('see you at golden hour.');">
+        <label for="email" class="signup-label">leave your address. we'll send a feather, then a bottle.</label>
+        <div class="signup-row">
+          <input type="email" id="email" name="email" placeholder="your.email@golden.hour" autocomplete="email" required />
+          <button type="submit">enter the world</button>
+        </div>
+        <div class="signup-fine">no spam, just letters. unsubscribe with a single sigh.</div>
+      </form>
+
+      <div class="footer-rule"></div>
+      <div class="footer-bottom">
+        <div class="foot-logo">
+          <svg viewBox="0 0 200 40" class="logo-svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="20" cy="20" r="11" />
+              <circle cx="20" cy="20" r="2.4" fill="currentColor" />
+              <line x1="20" y1="3" x2="20" y2="7" /><line x1="20" y1="33" x2="20" y2="37" />
+              <line x1="3" y1="20" x2="7" y2="20" /><line x1="33" y1="20" x2="37" y2="20" />
+              <line x1="8" y1="8" x2="11" y2="11" /><line x1="29" y1="29" x2="32" y2="32" />
+              <line x1="32" y1="8" x2="29" y2="11" /><line x1="11" y1="29" x2="8" y2="32" />
+            </g>
+            <text x="46" y="18" font-family="Instrument Serif, serif" font-style="italic" font-size="15" fill="currentColor">golden</text>
+            <text x="46" y="33" font-family="Instrument Serif, serif" font-style="italic" font-size="15" fill="currentColor">hour</text>
+          </svg>
+        </div>
+        <div class="foot-credits">
+          <span>© mmxxvi tresemmé × harry styles. all rituals reserved.</span>
+          <span>creative direction — pleasing studio · hair — adir abergel · film — autumn de wilde</span>
+          <span>a team golden hour concept · dps gurgaon · innovate@trix prelim 2026</span>
+          <span>privacy · terms · accessibility · faq</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+  <script src="script.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="transform:translate(-${scrollX}px,-${scrollY}px);transform-origin:top left">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script>
+<div id="audio-library" style="display:none;">
+  <audio id="adoreyoutrack" src="audio/Harry Styles - Adore You (Official Video) 4.mp3" preload="auto"></audio>
+  <audio id="cherrytrack" src="audio/Harry Styles - Cherry (Official Audio) 4.mp3" preload="auto"></audio>
+  <audio id="sunflowertrack" src="audio/Harry Styles - Sunflower, Vol. 6 (Official Audio) 4.mp3" preload="auto"></audio>
+  <audio id="watermelonsugartrack" src="audio/Harry Styles - Watermelon Sugar (Lyrics) 4.mp3" preload="auto"></audio>
+  <audio id="goldentrack" src="audio/Harry Styles - Golden (Official Video) 4.mp3" preload="auto"></audio>
+  <audio id="signofthetimestrack" src="audio/Harry Styles - Sign of the Times (Lyrics) 4.mp3" preload="auto"></audio>
+</div>
+
+</body>
+</html>
